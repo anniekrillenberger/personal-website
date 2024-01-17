@@ -1,0 +1,32 @@
+/* color palette:  
+    f1e6e1 (seashell)
+    ebdcd5 (champagne pink)
+    ddafa1 (melon)
+    7d4f50 (rose taupe)
+    27637c (payne's gray)
+    71816d (reseda green)
+*/
+
+body {
+    background-color: #f1e6e1;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #27637c;   
+}
+
+/* to override bootstrap default styling */
+.navbar-nav .navLink { 
+    color: #ebdcd5;
+}
+
+.navDrop {
+    color: #ebdcd5;
+    background-color: #27637c;
+}
+
+/* Show the dropdown menu on hover */
+.navDrop:hover .navDropdownItem {
+    display: block;
+}
