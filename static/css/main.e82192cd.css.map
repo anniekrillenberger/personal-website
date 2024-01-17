@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.e82192cd.css","mappings":"AAQA,IACI,aACJ","sources":["App.css"],"sourcesContent":["/* color palette:  \r\n    F1E6E1 (seashell)\r\n    DDAFA1 (melon)\r\n    7D4F50 (rose taupe)\r\n    27637C (payne's gray)\r\n    71816D (reseda green)\r\n*/\r\n\r\n.h1 {\r\n    color: #27637C\r\n}"],"names":[],"sourceRoot":""}
