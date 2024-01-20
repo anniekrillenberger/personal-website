@@ -7,8 +7,9 @@ import logo from "./images/bow.png";
 import './App.css';
 
 function App() {
+
   return (
-    <>
+    <div className='font'>
     <BrowserRouter>
       <Navbar className="navbar" sticky="top" 
               expand="sm" collapseOnSelect>
@@ -23,24 +24,24 @@ function App() {
             />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-            <Navbar.Collapse id="responsive-navbar-nav" className="me-auto">
+            <Navbar.Collapse>
               <Nav>
                 <Nav.Link as={Link} to="/" className="navLink">Home</Nav.Link>
-                <Nav.Link as={Link} to="/aboutMe" className="navLink">About Me</Nav.Link>
-                <NavDropdown title={<span className="navLink">Projects</span>}>
-                  <NavDropdown.Item as={Link} to="/techProjects" className="navLink navDrop">Tech</NavDropdown.Item>
-                  <NavDropdown.Item as={Link} to="/crochetProjects" className="navLink navDrop">Crochet</NavDropdown.Item>
+                <Nav.Link as={Link} to="/experiences" className="navLink">Experiences</Nav.Link>
+                <NavDropdown
+                    title={<span id="dropdownTitle" className="navLink">Projects</span>}>
+                  <NavDropdown.Item as={Link} to="/techProjects">Tech</NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/crochetProjects">Crochet</NavDropdown.Item>
               </NavDropdown>
+              <Nav.Link as={Link} to="/travel" className="navLink">Travel</Nav.Link>
               </Nav>
             </Navbar.Collapse>
         </Container>
       </Navbar>
     </BrowserRouter>
 
-
-
       <h1>Anne Krillenberger</h1>
-  </>
+  </div>
   );
 }
 
@@ -54,7 +55,6 @@ export default App;
  * TODO: 
  *      - copyright statement
  *      - fonts
- *      - fix background color?
  *      - navbar
  *        - hover color & for dropdown
  *        - dropdown styling
