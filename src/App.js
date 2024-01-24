@@ -54,8 +54,6 @@ export default App;
  * 
  * TODO: 
  *      - copyright statement
- *      - fonts
  *      - navbar
- *        - hover color & for dropdown
- *        - dropdown styling
+ *        - dropdown menu styling
  */
