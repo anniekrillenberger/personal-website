@@ -47,7 +47,6 @@ body {
 /* dropdown arrow */
 .navbar-nav .nav-link:focus,
 .navbar-nav .dropdown-item
-
 /* dropdown items */
     {
     color: #27637c;
@@ -64,11 +63,12 @@ body {
 }
 
 .image-style {
-    max-width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
     border-radius: 20px;
     opacity: .85;
-}
+  }
 
 .homepage-hi {
     display: inline-flex;
@@ -88,10 +88,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .homepage-paragraph {
+    text-align: justify; /* Distributes words evenly in each line */
     color: #27637c;
 }
 
@@ -116,5 +116,5 @@ body {
     /* Adjust the width to match the size of FontAwesome icons */
     height: 4em;
     /* Adjust the height to match the size of FontAwesome icons */
-    border-radius: 10px;
+    border-radius: 5px;
 }
