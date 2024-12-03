@@ -11,7 +11,7 @@ import { Tooltip } from 'react-tooltip'
 export default function Homepage() {
 
   const [isVkHovered, setIsVkHovered] = useState(false);
-  const linkedinLin = "https://www.linkedin.com/in/anne-krillenberger";
+  const linkedinLink = "https://www.linkedin.com/in/anne-krillenberger";
   const githubLink = "https://github.com/anniekrillenberger";
   const vkLink = "https://www.valueknowledge.com/";
 
@@ -30,7 +30,7 @@ export default function Homepage() {
             </h1>
             <p className="homepage-paragraph">I am a UW-Madison graduate working in software development based in Madison, Wisconsin. Thanks for coming to my corner of the internet. I'm glad you're here!</p>
             <div className="social-icons">
-              <a href={linkedinLin} target="_blank" rel="noopener noreferrer">
+              <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} size="4x" className="social-icon" />
               </a>
               <a href={githubLink} target="_blank" rel="noopener noreferrer">
