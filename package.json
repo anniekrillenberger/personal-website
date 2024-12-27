@@ -1,6 +1,0 @@
-{
-    "scripts": {
-      "start": "concurrently \"npm start --prefix client\" \"node server/server.js\""
-    }
-  }
-  
