@@ -4,33 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-<<<<<<< HEAD
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2"
-=======
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.7.1",
-    "@fortawesome/free-brands-svg-icons": "^6.5.2",
-    "@fortawesome/free-regular-svg-icons": "^6.7.1",
-    "@fortawesome/free-solid-svg-icons": "^6.7.1",
-    "bootstrap": "^5.3.3",
-    "cors": "^2.8.5",
-    "express": "^4.21.1",
-    "gh-pages": "^6.2.0",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.9.2",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^6.21.2",
-    "react-tooltip": "^5.26.4"
->>>>>>> b7695c08891da3d9efc432c65a5e1c476cbe9638
   }
 }
