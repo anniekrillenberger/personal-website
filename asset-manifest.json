@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.1fa0f9d7.css",
-    "main.js": "/static/js/main.65b8861b.js",
-    "static/js/787.c922dae8.chunk.js": "/static/js/787.c922dae8.chunk.js",
+    "main.css": "/static/css/main.21aa7a9c.css",
+    "main.js": "/static/js/main.3ea90b11.js",
     "static/media/me-wien-edited.jpg": "/static/media/me-wien-edited.7bd4db0de98899167ad9.jpg",
     "index.html": "/index.html",
-    "main.1fa0f9d7.css.map": "/static/css/main.1fa0f9d7.css.map",
-    "main.65b8861b.js.map": "/static/js/main.65b8861b.js.map",
-    "787.c922dae8.chunk.js.map": "/static/js/787.c922dae8.chunk.js.map"
+    "main.21aa7a9c.css.map": "/static/css/main.21aa7a9c.css.map",
+    "main.3ea90b11.js.map": "/static/js/main.3ea90b11.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fa0f9d7.css",
-    "static/js/main.65b8861b.js"
+    "static/css/main.21aa7a9c.css",
+    "static/js/main.3ea90b11.js"
   ]
 }
