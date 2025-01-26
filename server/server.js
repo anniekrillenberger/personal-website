@@ -7,7 +7,7 @@ const cors = require('cors');
 const PORT = process.env.PORT || 5000;
 const API_KEY = process.env.API_KEY;
 const uri = process.env.MONGO_URI;
-const client = new MongoClient(uri);
+const client = new MongoClient(uri, { useUnifiedTopology: true });
 
 // Enable CORS for your frontend (localhost during development)
 const allowedOrigins = ['http://localhost:3000', 'https://krillenberger.com'];
