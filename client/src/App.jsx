@@ -17,6 +17,15 @@ function App() {
       .catch(error => console.error('Error:', error));
   }, []);
 
+
+  useEffect(() => {
+    axios.get(`${API_URL}/api/data`)
+      .then(response => {
+        console.log("Message from API: ", response.data.message)
+      })
+      .catch(error => console.error('Error:', error));
+  }, []);
+
   return <Navigation />
 }
 
