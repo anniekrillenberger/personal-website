@@ -30,17 +30,12 @@ async function connectToDatabase() {
     await client.connect();
     console.log('Connected to MongoDB');
     const database = client.db('website-db');
-    const collection = database.collection('experiences');
+    const experiencesColl = database.collection('experiences');
 
     // Example route
-    app.get('/api/data', async (req, res) => {
-      const data = await collection.find({}).toArray();
+    app.get('/experiences', async (req, res) => {
+      const data = await experiencesColl.find({}).toArray();
       res.json(data);
-    });
-
-    // Example route
-    app.get('/test', (req, res) => {
-      res.json({ message: 'Hello from the backend!' });
     });
 
     app.listen(PORT, () => {

@@ -79,7 +79,7 @@ body {
   font-size: 2.5em;
 }
 
-.homepage-text {
+.text {
   font-weight: 500;
   color: #27637c;
 }
@@ -90,7 +90,7 @@ body {
   align-items: center;
 }
 
-.homepage-paragraph {
+.paragraph {
   text-align: justify; /* Distributes words evenly in each line */
   color: #27637c;
 }

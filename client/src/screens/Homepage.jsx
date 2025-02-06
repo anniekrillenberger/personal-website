@@ -26,9 +26,9 @@ export default function Homepage() {
                     <div>
                         <h1>
                             <span className="homepage-hi">Hi! </span>
-                            <span className="homepage-text">  My name's Anne :)</span>
+                            <span className="text">  My name's Anne :)</span>
                         </h1>
-                        <p className="homepage-paragraph">I am a UW-Madison graduate working in software development based in Madison, Wisconsin. Thanks for coming to my corner of the internet. I'm glad you're here!</p>
+                        <p className="paragraph">I am a UW-Madison graduate working in software development based in Madison, Wisconsin. Thanks for coming to my corner of the internet. I'm glad you're here!</p>
                         <div className="social-icons">
                             <a href={linkedinLin} target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faLinkedin} size="4x" className="social-icon" />
