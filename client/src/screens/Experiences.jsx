@@ -8,38 +8,48 @@ export default function Experiences() {
 
     const API_URL = process.env.REACT_APP_API_URL;
     const [experiences, setExperiences] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         axios.get(`${API_URL}/experiences`)
             .then(response => {
-                setExperiences(response.data)
+                setExperiences(response.data);
+                setLoading(false);
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {
+                console.error('Error:', error);
+                setLoading(false);
+            });
     }, []);
 
     return (
         <div className="p-6">
-            <VerticalTimeline>
-                {experiences.map((exp, index) => (
-                    <VerticalTimelineElement
-                        key={index}
-                        date={`${exp.startDate} - ${exp.endDate || "Present"}`}
-                        icon={exp.type === "education" ? <GraduationCap size={24} /> : <Briefcase size={24} />}
-                        iconStyle={{
-                            background: exp.type === "education" ? "#ddafa1" : "#7d4f50",
-                            color: "#fff"
-                        }}
-                    >
-                        <h3 className="text">{exp.title}</h3>
-                        <h5 className="text">{exp.organization}</h5>
-                        <ul className="paragraph">{exp.description.map((item, index) => (
-                            <li key={index}>{item}</li>
-                        ))}
-                        </ul>
+            {loading ? (
+                <div className="spinner-container">
+                    <div className="spinner"></div>
+                </div> ) : (
+                <VerticalTimeline>
+                    {experiences.map((exp, index) => (
+                        <VerticalTimelineElement
+                            key={index}
+                            date={`${exp.startDate} - ${exp.endDate || "Present"}`}
+                            icon={exp.type === "education" ? <GraduationCap size={24} /> : <Briefcase size={24} />}
+                            iconStyle={{
+                                background: exp.type === "education" ? "#ddafa1" : "#7d4f50",
+                                color: "#fff"
+                            }}
+                        >
+                            <h3 className="text">{exp.title}</h3>
+                            <h5 className="text">{exp.organization}</h5>
+                            <ul className="paragraph">{exp.description.map((item, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                            </ul>
 
-                    </VerticalTimelineElement>
-                ))}
-            </VerticalTimeline>
+                        </VerticalTimelineElement>
+                    ))}
+                </VerticalTimeline>
+            )}
         </div>
     );
 }
