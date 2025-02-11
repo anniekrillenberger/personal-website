@@ -10,7 +10,7 @@ export default function Experiences() {
     const [experiences, setExperiences] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
+    useEffect (() => {
         axios.get(`${API_URL}/experiences`)
             .then(response => {
                 setExperiences(response.data);
@@ -20,14 +20,15 @@ export default function Experiences() {
                 console.error('Error:', error);
                 setLoading(false);
             });
-    }, []);
+    });
 
     return (
-        <div className="p-6">
+        <div>
+            <h1 className="text center">Experiences</h1>
             {loading ? (
                 <div className="spinner-container">
                     <div className="spinner"></div>
-                </div> ) : (
+                </div>) : (
                 <VerticalTimeline>
                     {experiences.map((exp, index) => (
                         <VerticalTimelineElement

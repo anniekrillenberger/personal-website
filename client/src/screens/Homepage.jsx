@@ -19,10 +19,10 @@ export default function Homepage() {
         <Container>
             <Tooltip id="vk-redirect" />
             <Row xs={1} md={2}>
-                <Col className="homepage">
+                <Col className="center">
                     <img src={me} alt="Me outside the Vienna Art Museum" className="image-style" />
                 </Col>
-                <Col className="homepage">
+                <Col className="center">
                     <div>
                         <h1>
                             <span className="homepage-hi">Hi! </span>
