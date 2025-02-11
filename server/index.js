@@ -5,7 +5,7 @@ const cors = require('cors');
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send('Hello World!!');
+    res.redirect(301, 'https://www.krillenberger.com');
 })
 
 app.listen(8080, () => {
