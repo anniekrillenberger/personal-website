@@ -10,7 +10,7 @@ export default function Experiences() {
     const [experiences, setExperiences] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    useEffect (() => {
+    useEffect(() => {
         axios.get(`${API_URL}/experiences`)
             .then(response => {
                 setExperiences(response.data);
@@ -20,7 +20,7 @@ export default function Experiences() {
                 console.error('Error:', error);
                 setLoading(false);
             });
-    });
+    }, []);
 
     return (
         <div>
@@ -33,7 +33,7 @@ export default function Experiences() {
                     {experiences.map((exp, index) => (
                         <VerticalTimelineElement
                             key={index}
-                            date={`${exp.startDate} - ${exp.endDate || "Present"}`}
+                            date={<span className="text">{`${exp.startDate} - ${exp.endDate || "Present"}`}</span>}
                             icon={exp.type === "education" ? <GraduationCap size={24} /> : <Briefcase size={24} />}
                             iconStyle={{
                                 background: exp.type === "education" ? "#ddafa1" : "#7d4f50",
